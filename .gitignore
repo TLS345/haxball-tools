@@ -1,0 +1,10 @@
+# Node / JS
+node_modules/
+.env
+*.log
+
+# Editor / OS
+.DS_Store
+.idea/
+*.sublime-project
+*.sublime-workspace
