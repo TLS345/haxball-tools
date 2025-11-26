@@ -1,4 +1,4 @@
-# Day 14/365 - Goodbyes
+# Day 14/60 - Goodbyes
 _By TLS / Teleese_
 
 ## 🎯 Description
