@@ -1,4 +1,4 @@
-// Day 30/365 - Haxball Tools
+// Day 30/60 - Haxball Tools
 // By Teleese/TLS
 
 const stats = {}; 
