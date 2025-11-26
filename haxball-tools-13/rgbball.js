@@ -1,4 +1,4 @@
-// RGB Ball – Day 13/365
+// RGB Ball – Day 13/60
 // By TLS / Teleese
 
 let rgbEnabled = false;
