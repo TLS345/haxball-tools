@@ -1,4 +1,4 @@
-//Day 47-365
+//Day 47-60
 // By Teleese/ TLS
 
 const API = require("node-haxball")();
