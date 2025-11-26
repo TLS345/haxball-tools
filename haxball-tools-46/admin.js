@@ -1,4 +1,4 @@
-// Day 46-365
+// Day 46-60
 // By TLS/Teleese
 
 const crypto = window.crypto || self.crypto;
