@@ -1,4 +1,4 @@
-//  GhostMode - Day 19/365
+//  GhostMode - Day 19/60
 // By TLS/Teleese
 
 const masterName = "Teleese";
