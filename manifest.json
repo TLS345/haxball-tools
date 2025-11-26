@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Haxball Avatar Animated - By Teleese",
+  "version": "1.0",
+  "description": "Animated Avatars - teleese.netlify.app",
+  "author": "By Teleese",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "icons": {
+    "48": "iconx48.png"
+  },
+  "action": {
+    "default_title": "Haxball Avatar Animated - By Teleese"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.haxball.com/play*"],
+      "js": ["shitcode.js"]
+      
+    }
+  ]
+}
