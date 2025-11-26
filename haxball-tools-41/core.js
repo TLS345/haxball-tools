@@ -1,4 +1,4 @@
-// Day 41-365
+// Day 41-60
 // By TLS/ Teleese
 
 const extendedP = []
