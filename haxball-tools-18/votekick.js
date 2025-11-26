@@ -1,4 +1,4 @@
-// !votekick  - Day 18/365
+// !votekick  - Day 18/60
 // By TLS / Teleese
 
 let votacionActiva = false;
