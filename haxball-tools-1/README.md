@@ -1,4 +1,4 @@
-# 🎮 Haxball Tools – Day 1/365
+# 🎮 Haxball Tools – Day 1/60
 
 Welcome to **Day 1 of my 2 months GitHub challenge**! 🚀  
 Every day I’ll release a new Haxball tool. This first one is a **simple Anti-VPN script** to automatically kick VPN users from your rooms. 🛡️
