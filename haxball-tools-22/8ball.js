@@ -1,4 +1,4 @@
-// Day 22/365 - !8ball Command
+// Day 22/60 - !8ball Command
 // By TLS/Teleese
 
 const answers = [
