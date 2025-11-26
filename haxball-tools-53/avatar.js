@@ -1,4 +1,4 @@
-// Day 53-365
+// Day 53-60
 // By Teleese/TLS
 
 let originalAvatar = {};
