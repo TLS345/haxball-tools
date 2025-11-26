@@ -1,4 +1,4 @@
-# 🔤 Anti-Caps Lock — Day 8/365
+# 🔤 Anti-Caps Lock — Day 8/60
 
 Detects messages with excessive uppercase letters in Haxball rooms and warns or mutes repeat offenders.  
 Lightweight, fast, and easy to plug into any host script.
