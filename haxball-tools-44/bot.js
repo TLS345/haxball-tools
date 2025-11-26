@@ -1,4 +1,4 @@
-// Day 44-365
+// Day 44-60
 // By Teleese/TLS
 
 import { Client, GatewayIntentBits, EmbedBuilder } from 'discord.js';
