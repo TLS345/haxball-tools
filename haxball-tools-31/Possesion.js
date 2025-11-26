@@ -1,4 +1,4 @@
-// Day 28/365 - Ball Possession Tracker
+// Day 28/60 - Ball Possession Tracker
 // By Teleese/TLS
 
 var Rposs = 0;
