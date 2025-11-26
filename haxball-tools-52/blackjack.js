@@ -1,4 +1,4 @@
-//Day 52-365
+//Day 52-60
 //By TLS/Teleese
 
 /**
