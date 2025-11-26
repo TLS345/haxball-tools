@@ -1,6 +1,6 @@
 # Simple Haxball Macro
 
-Part of **Day 20/365 Haxball Tools**.
+Part of **Day 20/60 Haxball Tools**.
 
 **Simple Haxball Macro** is a lightweight and easy-to-use macro for web games like Haxball. It allows automated key presses with configurable settings from a modern control panel.
 
