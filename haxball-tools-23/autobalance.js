@@ -1,5 +1,5 @@
 // ============================================================
-// Day 23/365 - AutoBalance & Ultra Fast Shuffle 
+// Day 23/60 - AutoBalance & Ultra Fast Shuffle 
 // By TLS/Teleese
 // ============================================================
 
