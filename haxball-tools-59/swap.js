@@ -1,5 +1,5 @@
 // By Teleese/TLS
-// Day 59-365 Days 
+// Day 59-60 Days 
 
 room.onPlayerChat = function (player, message) {
     if (message === "!swap") {
