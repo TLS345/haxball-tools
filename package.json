@@ -1,0 +1,16 @@
+{
+  "name": "haxball-tools-60",
+  "version": "1.0.0",
+  "main": "launcher.js",
+  "type": "module",
+  "scripts": {
+    "start": "node launcher.js",
+    "bot": "node discord-bot.js",
+    "room": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.0",
+    "haxball.js": "^1.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
