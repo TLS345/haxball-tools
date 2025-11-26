@@ -1,4 +1,4 @@
-// Day 50-365
+// Day 50-60
 // By Teleese/TLS
 
 function getTeamLabel(team) {
