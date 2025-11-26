@@ -3,7 +3,7 @@
 
 # Kit Randomizer 🎯✨🛡️
 
-**Day 21/365 - Haxball Tools**
+**Day 21/60 - Haxball Tools**
 
 Automatically randomizes your kits in Haxball. Fun, fast, and easy to use! 🚀💥🎮
 
