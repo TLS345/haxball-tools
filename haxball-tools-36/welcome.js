@@ -1,4 +1,4 @@
-//Day 36/365
+//Day 36/60
 //By TLS/Teleese
 
 room.onPlayerJoin = (player) => {
