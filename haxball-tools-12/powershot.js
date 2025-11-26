@@ -1,4 +1,4 @@
-// Powershoot – Day 12/365
+// Powershoot – Day 12/60
 // By TLS / Teleese
 
 const BALL_INDEX = 0;
