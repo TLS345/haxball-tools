@@ -1,4 +1,4 @@
-# Haxball Tools - Day 29/365
+# Haxball Tools - Day 29/60
 
 A simple yet useful Haxball headless host script that adds basic admin management command like  `!clearbans`.
 
