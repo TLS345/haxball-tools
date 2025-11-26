@@ -1,4 +1,4 @@
-// Day 24/365 - Simple Shop Command
+// Day 24/60 - Simple Shop Command
 // By TLS/Teleese
 
 let players = {};
