@@ -1,4 +1,4 @@
-// Day 7/365 - Anti-AFK
+// Day 7/60 - Anti-AFK
 // By TLS / Teleese
 
 const AFK_LIMIT = 60000; // 1 minute
