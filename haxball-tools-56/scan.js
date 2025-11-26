@@ -1,5 +1,5 @@
 // By TLS/Teleese
-// Day 56-365
+// Day 56-60
 
 import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
