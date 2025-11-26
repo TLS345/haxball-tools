@@ -1,0 +1,67 @@
+name: Launch Haxball ↔ Discord Sync Haxball
+
+on:
+  workflow_dispatch:
+    inputs:
+      HAXBALL_TOKEN:
+        description: "Enter your Haxball API token"
+        required: true
+      DISCORD_TOKEN:
+        description: "Enter your Discord bot token"
+        required: true
+      DISCORD_CHANNEL_ID:
+        description: "Enter your Discord channel ID"
+        required: true
+      ROOM_NAME:
+        description: "Room name to create"
+        required: false
+        default: "Teleese Room :)"
+      MAX_PLAYERS:
+        description: "Max players"
+        required: false
+        default: "10"
+      PUBLIC_ROOM:
+        description: "Should the room be public? (true/false)"
+        required: false
+        default: "true"
+
+jobs:
+  start-room:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies manually
+        run: |
+          echo "📦 Installing required dependencies..."
+          npm install 
+
+      - name: Run Haxball Core (6h runtime)
+        env:
+          HAXBALL_TOKEN: ${{ github.event.inputs.HAXBALL_TOKEN }}
+          DISCORD_TOKEN: ${{ github.event.inputs.DISCORD_TOKEN }}
+          DISCORD_CHANNEL_ID: ${{ github.event.inputs.DISCORD_CHANNEL_ID }}
+          ROOM_NAME: ${{ github.event.inputs.ROOM_NAME }}
+          MAX_PLAYERS: ${{ github.event.inputs.MAX_PLAYERS }}
+          PUBLIC_ROOM: ${{ github.event.inputs.PUBLIC_ROOM }}
+        run: |
+          echo "🚀 Starting Haxball ↔ Discord sync (6h runtime)..."
+          node core.js &
+          PID=$!
+          for i in $(seq 1 21600); do
+            if ! ps -p $PID > /dev/null; then
+              echo "❌ Process ended early (PID $PID). Exiting..."
+              exit 1
+            fi
+            sleep 1
+          done
+          echo "⏰ 6 hours reached — stopping process."
+          kill $PID || true
+
