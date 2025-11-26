@@ -1,4 +1,4 @@
-// Day 32 - 365
+// Day 34 - 60
 // By TLS / Teleese
 
 const axios = require("axios");
