@@ -1,4 +1,4 @@
-// Day 27 - 365
+// Day 27 - 60
 // By TLS/Teleese
 
 function getTeamEmoji(team) {
