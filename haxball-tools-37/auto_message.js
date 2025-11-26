@@ -1,4 +1,4 @@
-//Day 37-365
+//Day 37-60
 //By TLS/Teleese
 
 const messages = [ // Change this values for what u wanna promote :) 
