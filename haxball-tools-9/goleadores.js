@@ -1,5 +1,5 @@
 // goleadores.js
-// Day 9/365 - Top Goleadores (By TLS)
+// Day 9/60 - Top Goleadores (By TLS)
 // Shit code i really dont like it but i dont have more time :( sorry chat
 const MAX_TOP = 10;
 const MIN_TOUCH_WINDOW = 7000;   
