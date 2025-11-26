@@ -1,4 +1,4 @@
-// Day 51-365
+// Day 51-60
 // By Teleese/TLS
 
 room.onPlayerChat = function(player, message) {
