@@ -1,5 +1,4 @@
-
-# Day 11/365 - Slide
+# Day 11/60 - Slide
 By TLS / Teleese
 
 ## Description
@@ -20,7 +19,7 @@ Slide is a script for Haxball rooms that gives players a "super kick" with coold
 
 ## Credits
 - Created by TLS / Teleese
-- Day 11/365 of the Haxball script project
+- Day 11/60 of the Haxball script project
 
 ## License
 This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
