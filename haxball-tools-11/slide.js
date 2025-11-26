@@ -1,4 +1,4 @@
-// Day 11/365 - Slide
+// Day 11/60 - Slide
 // By TLS / Teleese
 
 const KICKING_DAMPING = 0.9649;
