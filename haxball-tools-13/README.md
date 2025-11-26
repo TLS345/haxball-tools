@@ -1,5 +1,5 @@
-# 🎮 Haxball Tools – Day 13/365
-Welcome to Day 13 of my 1-year GitHub challenge! 🚀
+# 🎮 Haxball Tools – Day 13/60
+
 Today’s tool is **RGB Ball by TLS/Teleese**, a visual enhancement script that makes your Haxball ball glow with a smooth rainbow transition. 
 
 ⚡ Features
