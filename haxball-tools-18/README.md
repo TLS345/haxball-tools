@@ -1,4 +1,4 @@
-# Votekick Command - Day 18/365 ⚖️
+# Votekick Command - Day 18/60 ⚖️
 
 **By TLS / Teleese**  
 **License:** Apache 2.0
