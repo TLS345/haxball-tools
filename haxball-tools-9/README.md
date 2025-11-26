@@ -1,4 +1,4 @@
-# 🏆 Top Goleadores — Day 9/365
+# 🏆 Top Goleadores — Day 9/60
 
 Simple Top Goleadores tool for Haxball.  
 Counts goals per player and shows the Top 10 when someone types `!goleadores`.
