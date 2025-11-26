@@ -1,4 +1,4 @@
-# Day 10/365 – Emoji Avatar Animator for Haxball
+# Day 10/60 – Emoji Avatar Animator for Haxball
 
 **By TLS/Teleese**
 
