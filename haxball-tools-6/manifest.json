@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Haxball X Vortex",
+  "author": "Teleese",
+  "version": "1.0",
+  "description": "Haxball extension with Vortex :)",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.haxball.com/*", "*://haxball.com/*"],
+      "css": ["website/styles.css"],
+      "js": ["website/scripts.js"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["website/game/game.js"],
+      "matches": ["*://*.haxball.com/*", "*://haxball.com/*"]
+    }
+  ],
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.haxball.com/*",
+    "*://haxball.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Haxball Shits",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
