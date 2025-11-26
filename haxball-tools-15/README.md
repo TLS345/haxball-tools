@@ -1,4 +1,4 @@
-# Day 15/365 - Password Control
+# Day 15/60 - Password Control
 By TLS / Teleese
 
 This script lets Haxball room hosts change or remove the room password while the room is running.
