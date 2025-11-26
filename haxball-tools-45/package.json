@@ -1,0 +1,35 @@
+{
+  "name": "haxball-tools-45",
+  "version": "1.0.0",
+  "description": "Lightweight Puppeteer-based reCAPTCHA token harvester: launches Chromium, uses stealth and network/DOM heuristics to capture solved reCAPTCHA/headless tokens, stores and serves them (Discord, HTTP, local files), includes auto-refill and status endpoint. For testing on sites you own — do not abuse.",
+  "main": "bot-token-haxball-stealth.refill.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot-token-haxball-stealth.refill.js",
+    "prefill": "node bot-token-haxball-stealth.refill.js 1",
+    "status": "curl http://localhost:3000/status"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "express": "^4.21.1",
+    "puppeteer": "^23.7.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "puppeteer",
+    "recaptcha",
+    "token-harvester",
+    "discord-bot",
+    "automation",
+    "testing",
+    "headless",
+	"haxball"
+  ],
+  "author": "TLS / Teleese",
+  "license": "Apache v2"
+}
+
