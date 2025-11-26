@@ -1,5 +1,5 @@
-🎮 Haxball Tools – Day 12/365
-Welcome to Day 12 of my 1-year GitHub challenge! 🚀
+#🎮 Haxball Tools – Day 12/60
+
 Every day I release a new Haxball tool. Today’s tool is **PowerShot**, a script that lets players charge the ball and kick it with full power. ⚡
 
 ⚡ Features
