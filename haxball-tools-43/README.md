@@ -1,4 +1,4 @@
-# ⚡ Haxball Slow Mode Script - Day 43 - 365
+# ⚡ Haxball Slow Mode Script - Day 43 - 60
 
 > A **Slow Mode system** for Haxball Headless Host scripts.  
 > Keep your chat clean — stop spam before it starts 💬🚫
