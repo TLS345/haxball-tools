@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Haxball Macro - By Teleese",
+  "version": "1.0",
+  "description": "Macro For Haxball by Teleese/TLS",
+  "permissions": ["scripting","activeTab","storage"],
+  "host_permissions": ["https://*.haxball.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.haxball.com/*"],
+      "js": ["content_panel.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://*.haxball.com/*"]
+    }
+  ]
+}
