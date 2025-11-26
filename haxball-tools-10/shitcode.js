@@ -1,4 +1,4 @@
-// Day 10/365 -Avatar Animated Extension :)
+// Day 10/60 -Avatar Animated Extension :)
 // By TLS / Teleese
 
 (function(){
