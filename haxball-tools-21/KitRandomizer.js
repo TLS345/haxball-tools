@@ -1,4 +1,4 @@
-// Day 21/365 - Kit Randomizer
+// Day 21/60 - Kit Randomizer
 // By TLS/Teleese
 
 
