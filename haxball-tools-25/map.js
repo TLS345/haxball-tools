@@ -1,4 +1,4 @@
-// Day 25/365 - Map Commands
+// Day 25/60 - Map Commands
 // By TLS/Teleese
 
 const commands = {
