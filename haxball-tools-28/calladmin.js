@@ -1,5 +1,5 @@
 /*
-Day 28/365 - !calladmin 
+Day 28/60 - !calladmin 
 Created by Teleese / TLS 
 */
 
