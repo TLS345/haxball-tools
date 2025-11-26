@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Haxball Vortex-V1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+        body {
+            width: 400px;
+            height: 750px;
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            background: radial-gradient(circle at 30% 30%, #1a0000, #000000 85%);
+            overflow: hidden;
+            color: #fff;
+            position: relative;
+        }
+
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            pointer-events: none;
+            z-index: 0;
+            border-radius: 50%;
+        }
+
+        body::before {
+            background: radial-gradient(circle, rgba(255,0,0,0.08), transparent 70%);
+            animation: drift 30s infinite linear;
+            filter: blur(60px);
+        }
+
+        body::after {
+            background: radial-gradient(circle, rgba(255,255,255,0.02), transparent 80%);
+            animation: drift2 50s infinite linear;
+            filter: blur(50px);
+        }
+
+        @keyframes drift {
+            0% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(40px, 30px) scale(1.1); }
+            100% { transform: translate(0,0) scale(1); }
+        }
+
+        @keyframes drift2 {
+            0% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(-30px, 20px) scale(1.05); }
+            100% { transform: translate(0,0) scale(1); }
+        }
+
+        .header {
+            font-size: 40px;
+            font-weight: 700;
+            color: #ff4c4c;
+            text-shadow: 0 0 25px rgba(255,76,76,0.7);
+            margin-top: 30px;
+            margin-bottom: 50px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .module {
+            margin-bottom: 18px;
+            width: 90%;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0,0,0,0.38);
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 0 0 25px rgba(255,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .module:hover {
+            box-shadow: 0 0 45px rgba(255,0,0,0.25);
+        }
+
+        .module-label {
+            font-size: 17px;
+            font-weight: 600;
+            color: #ff6666;
+            text-shadow: 1px 1px 4px #000000;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .input-field {
+            width: 100%;
+            height: 38px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff;
+            background-color: rgba(30,30,30,0.85);
+            border: 1px solid rgba(255,76,76,0.6);
+            border-radius: 8px;
+            padding: 6px 12px;
+            text-align: center;
+            margin-top: 4px;
+            transition: all 0.25s ease;
+        }
+
+        .input-field:focus {
+            border-color: #ff4c4c;
+            box-shadow: 0 0 10px rgba(255,76,76,0.5);
+            outline: none;
+        }
+
+        .input-field::placeholder {
+            color: rgba(255,100,100,0.5);
+        }
+
+        .button {
+            min-width: 70px;
+            height: 36px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: rgba(0,0,0,0.7);
+            border: 1px solid #ff4c4c;
+            border-radius: 8px;
+            margin: 3px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button:hover {
+            background-color: #ff4c4c;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255,76,76,0.7);
+            transform: scale(1.05);
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 42px;
+            height: 22px;
+        }
+
+        .switch input[type="checkbox"] { display: none; }
+
+        .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #555;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 0;
+            bottom: 0;
+            background-color: #fff;
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+
+        input[type="checkbox"]:checked + .slider {
+            background-color: #ff4c4c;
+        }
+
+        input[type="checkbox"]:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+        .module-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6px;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">Vortex</div>
+
+    <div class="module">
+        <span class="module-label">FakePing</span>
+        <input type="number" id="fakeping-input" class="input-field" placeholder="Value" />
+        <div class="module-actions">
+            <button class="button" id="fakeping-copy-button">Copy</button>
+        </div>
+    </div>
+
+    <div class="module">
+        <span class="module-label">ChatBubble</span>
+        <div class="module-actions">
+            <label class="switch">
+                <input type="checkbox" id="chatbubble-switch">
+                <span class="slider"></span>
+            </label>
+            <button class="button" id="chatbubble-copy-button">Copy</button>
+        </div>
+    </div>
+
+    <div class="module">
+        <span class="module-label">Auto Admin</span>
+        <div class="module-actions">
+            <button class="button" id="autoadmin-on-button">ON</button>
+            <button class="button" id="autoadmin-off-button">OFF</button>
+            <button class="button" id="autoadmin-status-button">Status</button>
+        </div>
+    </div>
+
+    <div class="module">
+        <span class="module-label">Admin Recovery</span>
+        <div class="module-actions">
+            <button class="button" id="adminrecovery-on-button">ON</button>
+            <button class="button" id="adminrecovery-off-button">OFF</button>
+        </div>
+    </div>
+
+    <div class="module">
+        <span class="module-label">Quick Kick</span>
+        <input type="text" id="qkick-input" class="input-field" placeholder="Player Name" />
+        <div class="module-actions">
+            <button class="button" id="qkick-copy-button">Copy</button>
+        </div>
+    </div>
+
+    <div class="module">
+        <span class="module-label">Room Stats</span>
+        <div class="module-actions">
+            <button class="button" id="roomstats-copy-button">Copy</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
