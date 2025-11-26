@@ -1,4 +1,4 @@
-# Day 25/365 - Map Commands 🗺️
+# Day 25/60 - Map Commands 🗺️
 
 A simple Haxball Headless script that adds several map-related commands to your room.  
 Each command can only be used when the match is **not running**, ensuring fair gameplay and stability.
